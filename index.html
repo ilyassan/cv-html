@@ -6,8 +6,15 @@
     <title>CV - Html</title>
 
     <style>
+        body {
+            background-color: black;
+        }
+
         main {
-            margin: 0 150px;
+            margin: 75px 150px;
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
         }
 
         header {
@@ -47,6 +54,16 @@
             font-size: larger;
             margin: 30px 0;
         }
+
+
+        .flowers-bullets > p::before {
+            content: '\2756';
+            margin: 0 20px;
+        }
+
+        .internships > .flowers-bullets {
+            margin-left: 30px;
+        }
     </style>
 </head>
 <body>
@@ -84,13 +101,27 @@
             <p>To work hard with full dedicatoin for the achievements of organization objective under satisfying job contact. hence enhancing my skill and knowledge and ready to learn new things.</p>
         </div>  
         
-        <div class="educational">
+        <div class="educational flowers-bullets">
             <div class="title-section">Educational Profile</div>
             <p>Pursuing PGDM-MBA in Marketing Management from MIT school of Telecom Management Pune.</p>
             <p>B.com from J.P.G College, M.G.K.V.P University in 2012 with 55.67%</p>
             <p>HSC from A.I.M College, U.P Board, Varanasi in 2009 with 70.80%</p>
             <p>HSC from A.I.M College, U.P Board, Varanasi in 2007 with 60.20%</p>    
         </div>
+
+        <div class="internships">
+            <div class="title-section">Summer Internship Programme</div>
+            <p>Company Name - <b>Property Teminus</b></p>
+            <p>Time Duration - 19 May to 20 July 2014</p>
+            <p>Project Title - Understanding of expansion potental of IT sector & overall sector growth in terms of real estate</p>
+            <p>Objective of Study -</p>
+            <div class="flowers-bullets">
+                <p>Analyzing the top IT companies and their growth</p>
+                <p>Understanding companies real estate growth</p>
+                <p>Covering the major IT park and knowing total occupancy</p>
+            </div>
+        </div>
+
    </main>
 </body>
 </html>
