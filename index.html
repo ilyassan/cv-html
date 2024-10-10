@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Html</title>
+
+    <style>
+        main {
+            margin: 0 150px;
+        }
+
+        header {
+            text-align: center;
+        }
+        header h1 {
+            text-decoration: underline;
+        }
+        header div {
+            display: flex;
+            justify-content: end;
+        }
+
+        .infos > div {
+            display: flex;
+            font-weight: bold;
+        }
+        .infos > div > span:first-child {
+            flex-basis: 100px;
+        }
+        .infos > div > span:last-child {
+            margin-left: 15px;
+        }
+        .email {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <header>
+            <h1>Resume</h1>
+            <h2>Specialization: Marketing</h2>
+            
+            <div>
+                <img src="./imgs/ind.jpg" width="130" height="130">
+            </div>
+        </header>
+
+        <div class="infos">
+            <div>
+                <span>Name</span>
+                <span>:</span>
+                <span>Ilyass Anida</span>
+            </div>
+            <div>
+                <span>Email Id</span>
+                <span>:</span>
+                <span class="email">anidailyass@gmail.com</span>
+            </div>
+            <div>
+                <span>Contact No.</span>
+                <span>:</span>
+                <span>06 72 01 81 36</span>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
