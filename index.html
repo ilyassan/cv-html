@@ -6,120 +6,80 @@
     <title>CV - Html</title>
 
     <style>
-        body {
-            background-color: black;
-        }
-
         main {
             margin: 75px 150px;
-            background-color: white;
             padding: 50px;
-            border-radius: 15px;
-        }
-
-        header {
-            text-align: center;
-        }
-        header h1 {
-            text-decoration: underline;
-        }
-        header div {
-            display: flex;
-            justify-content: end;
-        }
-
-        .infos {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .infos > div {
-            display: flex;
-            font-weight: bold;
-        }
-        .infos > div > span:first-child {
-            flex-basis: 100px;
-        }
-        .infos > div > span:last-child {
-            margin-left: 15px;
-        }
-        .email {
-            color: blue;
-            text-decoration: underline;
-        }
-        .title-section {
-            background-color: #ddd;
-            border-bottom: black 1.5px solid;
-            font-weight: bold;
-            font-size: larger;
-            margin: 30px 0;
-        }
-
-
-        .flowers-bullets > p::before {
-            content: '\2756';
-            margin: 0 20px;
-        }
-
-        .internships > .flowers-bullets {
-            margin-left: 30px;
         }
     </style>
+
 </head>
-<body>
-    <main>
+<body style="background-color: black;">
+    <main style="background-color: white; border-radius: 15px;">
 
         <header>
-            <h1>Resume</h1>
-            <h2>Specialization: Marketing</h2>
+            <center>
+                <h1>Resume</h1>
+                <h2>Specialization: Marketing</h2>
+            </center>
             
-            <div>
+            <div align="right">
                 <img src="./imgs/ind.jpg" width="130" height="130">
             </div>
         </header>
 
-        <div class="infos">
+        <div>
             <div>
-                <span>Name</span>
-                <span>:</span>
-                <span>Ilyass Anida</span>
+                <span><b>Name</b></span>
+                <span><b>:</b></span>
+                <span><b>Ilyass Anida</b></span>
             </div>
             <div>
-                <span>Email Id</span>
-                <span>:</span>
-                <span class="email">anidailyass@gmail.com</span>
+                <span><b>Email Id</b></span>
+                <span><b>:</b></span>
+                <span><a href="mailto:anidailyass@gmail.com">anidailyass@gmail.com</a></span>
             </div>
             <div>
-                <span>Contact No.</span>
-                <span>:</span>
-                <span>06 72 01 81 36</span>
+                <span><b>Contact No.</b></span>
+                <span><b>:</b></span>
+                <span><b>06 72 01 81 36</b></span>
             </div>
         </div>
 
-        <div class="objective">
-            <div class="title-section">Objective</div>
+        <div>
+            <h3 style="background-color: #ddd;">
+                Objective
+                <hr>
+            </h3>
             <p>To work hard with full dedicatoin for the achievements of organization objective under satisfying job contact. hence enhancing my skill and knowledge and ready to learn new things.</p>
         </div>  
         
-        <div class="educational flowers-bullets">
-            <div class="title-section">Educational Profile</div>
-            <p>Pursuing PGDM-MBA in Marketing Management from MIT school of Telecom Management Pune.</p>
-            <p>B.com from J.P.G College, M.G.K.V.P University in 2012 with 55.67%</p>
-            <p>HSC from A.I.M College, U.P Board, Varanasi in 2009 with 70.80%</p>
-            <p>HSC from A.I.M College, U.P Board, Varanasi in 2007 with 60.20%</p>    
+        <div>
+            <h3 style="background-color: #ddd;">
+                Educational Profile
+                <hr>
+            </h3>
+            <ul>
+                <li>Pursuing PGDM-MBA in Marketing Management from MIT school of Telecom Management Pune.</li>
+                <li>B.com from J.P.G College, M.G.K.V.P University in 2012 with 55.67%</li>
+                <li>HSC from A.I.M College, U.P Board, Varanasi in 2009 with 70.80%</li>
+                <li>HSC from A.I.M College, U.P Board, Varanasi in 2007 with 60.20%</li>  
+            </ul>  
         </div>
 
-        <div class="internships">
-            <div class="title-section">Summer Internship Programme</div>
+        <div>
+            <h3 style="background-color: #ddd;">
+                Summer Internship Programme
+                <hr>
+            </h3>
             <p>Company Name - <b>Property Teminus</b></p>
             <p>Time Duration - 19 May to 20 July 2014</p>
             <p>Project Title - Understanding of expansion potental of IT sector & overall sector growth in terms of real estate</p>
             <p>Objective of Study -</p>
-            <div class="flowers-bullets">
-                <p>Analyzing the top IT companies and their growth</p>
-                <p>Understanding companies real estate growth</p>
-                <p>Covering the major IT park and knowing total occupancy</p>
-            </div>
+            <ul>
+                <li>Analyzing the top IT companies and their growth</li>
+                <li>Understanding companies real estate growth</li>
+                <li>Covering the major IT park and knowing total occupancy</li>
+            </ul>
         </div>
 
    </main>
