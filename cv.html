@@ -13,38 +13,43 @@
         }
 
         .container {
+            display: flex;
+            gap: 3.5rem;
             width: 800px;
             margin: 20px auto;
-            padding: 30px;
+            padding: 35px;
             background-color: #ffffff;
             border: 1px solid #ddd;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
 
-        .header {
-            display: flex;
-            align-items: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-        }
-
-        .header img {
-            border-radius: 5px;
-            width: 150px;
-            height: 150px;
+        .left-column img {
+            border-radius: 6px;
+            width: 235px;
+            height: 235px;
             object-fit: cover;
-            margin-right: 20px;
+            margin-bottom: .8rem;
+        }
+        .left-column h3 {
+            color: #1E3A8A;
+        }
+        .left-column .section {
+            margin-top: 2.5rem;
+            font-size: 17px;
         }
 
-        .header h1 {
+        .right-column div:first-of-type {
+            margin-bottom: 2.5rem;
+        }
+
+        .right-column div:first-of-type h1 {
             color: #1E3A8A;
             font-size: 2em;
             margin: 0;
         }
 
-        .header h2 {
-            font-size: 1.5em;
+        .right-column div:first-of-type h2 {
+            font-size: 1.8em;
             margin: 5px 0 0 0;
             font-weight: normal;
         }
@@ -58,23 +63,16 @@
         }
 
         .left-column, .right-column {
-            width: 48%;
             float: left;
             margin-bottom: 20px;
         }
-
         .left-column {
-            margin-right: 4%;
+            flex-basis: 44%;
         }
 
-        .info-section p, .details p {
+        .details p {
             margin: 5px 0;
             font-size: 0.9em;
-        }
-
-        .info-section h3 {
-            font-size: 1.1em;
-            margin: 10px 0 5px;
         }
 
         .details {
@@ -116,85 +114,80 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="./imgs/ilyass.jpg" alt="Profile Picture">
-            <div>
-                <h1>FULLSTACK DÉVELOPPEUR</h1>
-                <h2>Anida & Ilyass</h2>
-            </div>
-        </div>
 
         <div class="left-column">
+            <img src="./imgs/ilyass.jpg" alt="Profile Picture">
+
             <div class="section info-section">
                 <h3>Informations Personnelles</h3>
                 <p>+212 672018136</p>
                 <p>anidailyass@gmail.com</p>
                 <p>Safi</p>
-                <p class="link"><a href="https://www.linkedin.com/in/ilyassanida/" target="_blank">LinkedIn</a></p>
-                <p class="link"><a href="https://github.com/ilyassan" target="_blank">GitHub</a></p>
+                <p class="link"><a href="https://www.linkedin.com/in/ilyassanida/" target="_blank">LinkedIn: ilyassanida</a></p>
+                <p class="link"><a href="https://github.com/ilyassan" target="_blank">GitHub: ilyassan</a></p>
             </div>
 
             <div class="section">
                 <h3>Langues</h3>
-                <p>Arabe : Langue Maternelle</p>
-                <p>Français : Niveau Moyen</p>
-                <p>Anglais : Niveau Bien</p>
-                <p>Amazigh : Niveau Moyen</p>
+                <p>Arabe : Langue maternelle</p>
+                <p>Amazigh : Niveau moyen</p>
+                <p>Français : Niveau moyen</p>
+                <p>Anglais : Bon niveau</p>
             </div>
 
             <div class="section">
                 <h3>Centres d’intérêt</h3>
-                <p>Problem Solving</p>
-                <p>Teamwork</p>
+                <p>Résolution de problèmes</p>
+                <p>Découverte de nouvelles choses</p>
                 <p>Sport</p>
             </div>
         </div>
 
         <div class="right-column">
+            <div>
+                <h1>DÉVELOPPEUR FULL-STACK</h1>
+                <h2>Anida Ilyass</h2>
+            </div>
             <div class="section">
                 <h3 class="section-title">Compétences Techniques</h3>
-                <p><strong>Langages de Programmation :</strong> PHP (MVC - OOP) / Javascript</p>
-                <p><strong>Programmation :</strong> Web / Mobile</p>
-                <p><strong>Base de Données :</strong> MySQL / MongoDB</p>
-                <p><strong>Méthode d'analyse et Conception :</strong> UML</p>
-                <p><strong>Technologie Web et Mobile :</strong> HTML / CSS / SASS / Bootstrap / Tailwind / API / React / Next.js / React Native / Laravel / Express.js</p>
-                <p><strong>Logiciels :</strong> VS Code / Figma / Postman / Docker</p>
-                <p><strong>Version contrôle :</strong> GIT / GitHub</p>
-                <p><strong>Gestion de projet :</strong> Github Projects</p>
-                <p><strong>CMS :</strong> WordPress</p>
+                <p><strong>Langages de programmation :</strong> PHP (MVC - POO) / JavaScript / Python</p>
+                <p><strong>Développement :</strong> Web / Mobile</p>
+                <p><strong>Bases de données :</strong> MySQL / MongoDB</p>
+                <p><strong>Modélisation et conception :</strong> UML / Agilité : Scrum et Kanban</p>
+                <p><strong>Front-end :</strong> HTML / CSS / SASS / Bootstrap / Tailwind / React / Next.js</p>
+                <p><strong>Back-end :</strong> Laravel / Express.js</p>
+                <p><strong>Mobile :</strong> React Native</p>
+                <p><strong>Logiciels :</strong> VS Code / Figma / Postman</p>
+                <p><strong>Gestion de version :</strong> GIT / GitHub</p>
+                <p><strong>Gestion de projet :</strong> GitHub Projects / Trello</p>
             </div>
-        </div>
 
-        <div class="clearfix"></div>
-
-        <div class="section">
-            <h3 class="section-title">Projets</h3>
-        
-            <p class="item-title">Système de Gestion Universitaire</p>
-            <p>📅 En cours - 22/02/2024</p>
-            <p><strong>Mission :</strong> Développer un système de gestion pour les universités permettant aux étudiants de consulter leurs notes et devoirs, aux enseignants de saisir les notes et d'assigner les devoirs aux classes, et à l'administration de suivre les statistiques de l'université.</p>
-            <p><strong>Technologies utilisées :</strong> Laravel (MVC), Blade, MySQL, Bootstrap, WebSocket</p>
-            <p><strong>Lien :</strong> <a href="https://github.com/ilyassan/laravel-university-system">https://github.com/ilyassan/laravel-university-system</a></p>
+            <div class="section">
+                <h3 class="section-title">Projets</h3>
             
-            <div class="section-title"></div>
-
-            <p class="item-title">Site Web de Chat</p>
-            <p>📅 10/07/2023 - 15/10/2023</p>
-            <p><strong>Mission :</strong> Développer une application web permettant aux utilisateurs d’ajouter des amis, de communiquer par messages texte ou appel audio, et de créer des groupes de discussion.</p>
-            <p><strong>Technologies utilisées :</strong> Node.js, Express.js, MongoDB, EJS, Bootstrap, WebSocket, WebRTC</p>
-            <p><strong>Lien :</strong> <a href="https://github.com/ilyassan/nodejs-chat-app">https://github.com/ilyassan/nodejs-chat-app</a></p>
-        </div>
-        
-        
-
-        <div class="section">
-            <h3 class="section-title">Formations</h3>
+                <p class="item-title">Système de Gestion Universitaire</p>
+                <p><strong>Mission :</strong> Développer un système pour faciliter la gestion universitaire.</p>
+                <p><strong>Technologies utilisées :</strong> Laravel (MVC), Blade, MySQL, Bootstrap, WebSocket</p>
+                <p><strong>Lien :</strong> <a href="https://github.com/ilyassan/laravel-university-system">https://github.com/ilyassan/laravel-university-system</a></p>
+                
+                <div class="section-title"></div>
+    
+                <p class="item-title">Site Web de Chat</p>
+                <p><strong>Mission :</strong> Créer une application web pour connecter les utilisateurs.</p>
+                <p><strong>Technologies utilisées :</strong> Node.js, Express.js, MongoDB, EJS, Bootstrap, WebSocket, WebRTC</p>
+                <p><strong>Lien :</strong> <a href="https://github.com/ilyassan/nodejs-chat-app">https://github.com/ilyassan/nodejs-chat-app</a></p>
+            </div>
             
-            <p><strong>Développement Web et Web Mobile</strong> à Youcode (OCP/Simplon)</p>
-            <p>📅 2024 - En cours | 📍 Safi, Maroc</p>
-            
-            <p><strong>Baccalauréat Option Économique</strong></p>
-            <p>📅 2023 - 2024 | 📍 Safi, Maroc</p>
+    
+            <div class="section">
+                <h3 class="section-title">Formations</h3>
+                
+                <p><strong>Développement Web et Web Mobile</strong> à Youcode (UM6P)</p>
+                <p>📅 2024 - En cours | 📍 Safi, Maroc</p>
+                
+                <p><strong>Baccalauréat Sciences Économiques</strong> au lycée Charif Al Idrissi</p>
+                <p>📅 2023 - 2024 | 📍 Safi, Maroc</p>
+            </div>
         </div>
     </div>
 </body>
